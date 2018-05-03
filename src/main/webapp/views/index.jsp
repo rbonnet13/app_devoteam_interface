@@ -109,7 +109,7 @@
         </c:choose>
     </div>
     <div id="aside">
-        <p>Rester en contact avec nos Ã©quipes.</p>
+        <p>Rester en contact avec nos équipes.</p>
         <ul>
             <li><a href="https://script.google.com/a/macros/devoteam.com/s/AKfycbx-QrWfN1tycniy-GYbWA3_yGW44YZ_yuIu5Iql7ARrzDCRjb8/exec">IT PORTAL</a></li>
             <li><a href="https://france.devoteam.com/">DEVOTEAM</a></li>
@@ -118,7 +118,7 @@
     </div>
     <div id="footer">
         <p>
-            Ce projet Ã  Ã©tÃ© developpÃ© par devoteam.<br/>
+            Ce projet à été developpé par devoteam.<br/>
         </p>
     </div>
 </div>
