@@ -4,13 +4,6 @@
 body, p, legend, label, input {
     font: normal 8pt verdana, helvetica, sans-serif;
 }
-.img-back {
-	background-image: url("../images/devoteam.jpg");
-    padding: 25px;
-    background-repeat: no-repeat;
-    background-size: 900px 400px;
-    height: 350px;
- }
 
 fieldset {
     padding: 10px;
@@ -68,4 +61,19 @@ form input.sansLabel {
 
 form .requis {
     color: #c00;
+}
+/* container images
+.flex-container {
+  display: flex;
+  background-color: #f1f1f1;
+}
+
+.flex-container > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  line-height: 200px;
+  font-size: 30px;
 }
