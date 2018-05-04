@@ -26,16 +26,18 @@
 </head>
 
 <body>
-<div id="container">
+ <div id="container">
     <div class="dualbrand">
         <img src="<c:url value="/static/resources/gfx/devoteam.jpg"/>" height="130" width="300"/>
     </div>
+    
     <div id="content">
         <h1>Welcome to DevoApp!</h1>
 
         <div>
             <p>Bienvenu sur notre service d'application.</p>
         </div>
+        
         <div>
           <table>
             <tr>
@@ -46,19 +48,23 @@
             </tr>
         </table>
         </div>
+        
 		<div id="aside">
-        <p>Rester en contact avec nos équipes.</p>
-        <ul>
-            <li><a href="https://script.google.com/a/macros/devoteam.com/s/AKfycbx-QrWfN1tycniy-GYbWA3_yGW44YZ_yuIu5Iql7ARrzDCRjb8/exec">IT PORTAL</a></li>
-            <li><a href="https://france.devoteam.com/">DEVOTEAM</a></li>
-             <li><a href="../views/application.html">Application</a></li>
-        </ul>
-    </div>
-    <div id="footer">
+	        <p>Rester en contact avec nos équipes.</p>
+	        <ul>
+	            <li><a href="https://script.google.com/a/macros/devoteam.com/s/AKfycbx-QrWfN1tycniy-GYbWA3_yGW44YZ_yuIu5Iql7ARrzDCRjb8/exec">IT PORTAL</a></li>
+	            <li><a href="https://france.devoteam.com/">DEVOTEAM</a></li>
+	             <li><a href="../views/application.html">Application</a></li>
+	        </ul>
+      </div>
+      
+      <div id="footer">
         <p>
             Ce projet à été developpé par devoteam.<br/>
         </p>
-    </div>
+     </div>
+    
+   </div>
 </div>
 </body>
 </html>

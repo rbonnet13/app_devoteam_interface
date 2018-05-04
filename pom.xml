@@ -144,12 +144,10 @@
                 <artifactId>commons-logging</artifactId>
                 <version>${version.commons.logging}</version>
             </dependency>
-            
-			<dependency>
+            <dependency>
           	  <groupId>mysql</groupId>
           	  <artifactId>mysql-connector-java</artifactId>
-       		</dependency>
-       		 
+       		 </dependency>
             <!-- Add cglib for the MemberDaoTest -->
             <dependency>
                 <groupId>cglib</groupId>
@@ -266,10 +264,10 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-expression</artifactId>
         </dependency>
-       <dependency>
-		  <groupId>org.springframework</groupId>
-			<artifactId>spring-jdbc</artifactId>
-			<version>${spring.version}</version>
+        <dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-jdbc</artifactId>
+		    <version>4.3.14.RELEASE</version>
 		</dependency>
         <dependency>
             <groupId>org.springframework</groupId>
