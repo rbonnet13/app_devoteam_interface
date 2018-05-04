@@ -26,11 +26,11 @@
     <datasource jndi-name="java:jboss/datasources/app_devoteam_interfaceDSBasic"
                 pool-name="app_devoteam_interface" enabled="true"
                 use-java-context="true">
-        <connection-url>jdbc:h2:mem:app_devoteam_interface-quickstart;DB_CLOSE_DELAY=-1</connection-url>
+        <connection-url>jdbc:mysql://172.30.94.253:3306/appdevoteam</connection-url>
         <driver>h2</driver>
         <security>
-            <user-name>sa</user-name>
-            <password>sa</password>
+            <user-name>devoteam</user-name>
+            <password>devoteam</password>
         </security>
     </datasource>
 </datasources>
