@@ -36,82 +36,17 @@
         <div>
             <p>Bienvenu sur notre service d'application.</p>
         </div>
-
-        <form:form commandName="newMember" id="reg">
-            <h2>Inscription </h2>
-            <table>
-                <tbody>
-                <tr>
-                    <td><form:label path="name">Nom:</form:label></td>
-                    <td><form:input path="name"/></td>
-                    <td><form:errors class="invalid" path="name"/></td>
-                </tr> 
-                <tr>
-                    <td><form:label path="email">Email:</form:label></td>
-                    <td><form:input path="email"/></td>
-                    <td><form:errors class="invalid" path="email"/></td>
-                </tr>
-                <tr>
-                    <td><form:label path="phoneNumber">Telephone:</form:label></td>
-                    <td><form:input path="phoneNumber"/></td>
-                    <td><form:errors class="invalid" path="phoneNumber"/></td>
-                </tr>
-                <tr>
-                    <td><p style="color: red">${error}</p></td>
-                </tr>
-                <tr>
-                   <td><a href="<c:url value="../views/login.jsp"/>">Connexion</a></td>
-                </tr>
-                </tbody>
-            </table>
-            <table>
-                <tr>
-                    <td>
-                        <input type="submit" value="Register" class="register"/>
-                        <input type="reset" value="Cancel" class="cancel"/>
-                    </td>
-                </tr>
-            </table>
-        </form:form>
-        <h2>Membres actifs</h2>
-        <c:choose>
-            <c:when test="${members.size()==0}">
-                <em>Aucun membre actif</em>
-            </c:when>
-            <c:otherwise>
-                <table id="membersTable" class="simpletablestyle">
-                    <thead>
-                        <tr>
-                            <th>Id</th>
-                            <th>Nom</th>
-                            <th>Email</th>
-                            <th>Phone #</th>
-                            <th>REST URL</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <c:forEach items="${members}" var="member">
-                            <tr>
-                                <td>${member.id}</td>
-                                <td>${member.name}</td>
-                                <td>${member.email}</td>
-                                <td>${member.phoneNumber}</td>
-                                <td><a href="<c:url value="/rest/members/${member.id}"/>">/rest/members/${member.id}</a></td>
-                            </tr>
-                        </c:forEach>
-                    </tbody>
-                </table>
-                <table class="simpletablestyle">
-                    <tr>
-                        <td>
-                            REST URL for all members: <a href="<c:url value="/rest/members"/>">/rest/members</a>
-                        </td>
-                    </tr>
-                </table>
-            </c:otherwise>
-        </c:choose>
-    </div>
-    <div id="aside">
+        <div>
+          <table>
+            <tr>
+                <td><a href="login">Login</a>
+                </td>
+                <td><a href="register">Register</a>
+                </td>
+            </tr>
+        </table>
+        </div>
+		<div id="aside">
         <p>Rester en contact avec nos équipes.</p>
         <ul>
             <li><a href="https://script.google.com/a/macros/devoteam.com/s/AKfycbx-QrWfN1tycniy-GYbWA3_yGW44YZ_yuIu5Iql7ARrzDCRjb8/exec">IT PORTAL</a></li>

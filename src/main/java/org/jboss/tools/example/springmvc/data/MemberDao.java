@@ -18,6 +18,7 @@ package org.jboss.tools.example.springmvc.data;
 
 import java.util.List;
 
+import org.jboss.tools.example.springmvc.model.Login;
 import org.jboss.tools.example.springmvc.model.Member;
 
 public interface MemberDao {
@@ -28,4 +29,6 @@ public interface MemberDao {
     public List<Member> findAllOrderedByName();
 
     public void register(Member member);
+    
+    Member validateUser(Login login);
 }
