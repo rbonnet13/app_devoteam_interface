@@ -30,9 +30,6 @@
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="../views/" />
         <property name="suffix" value=".jsp" />
-        <property name="location">
-        		<value>classpath:/src/main/application.properties</value>
-        </property>
     </bean>
 
     <mvc:resources mapping="/static/**" location="/" />
