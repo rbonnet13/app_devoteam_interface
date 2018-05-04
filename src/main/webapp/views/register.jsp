@@ -7,7 +7,7 @@
         </head>
         <body>
             <form:form id="regForm" modelAttribute="user" action="registerProcess" method="post">
-                <table align="center">
+                <table>
                     <tr>
                         <td>
                             <form:label path="username">Username</form:label>
