@@ -60,7 +60,7 @@
                     <td><p style="color: red">${error}</p></td>
                 </tr>
                 <tr>
-                   <td><a href="src/main/webapp/views/login.jsp/" >Connexion</a></td>
+                   <td><a href="../views/login.jsp/">Connexion</a></td>
                 </tr>
                 </tbody>
             </table>
