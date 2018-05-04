@@ -148,7 +148,8 @@
 			<dependency>
           	  <groupId>mysql</groupId>
           	  <artifactId>mysql-connector-java</artifactId>
-       		 </dependency>
+       		</dependency>
+       		 
             <!-- Add cglib for the MemberDaoTest -->
             <dependency>
                 <groupId>cglib</groupId>
