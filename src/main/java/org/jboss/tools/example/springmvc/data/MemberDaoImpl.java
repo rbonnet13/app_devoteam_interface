@@ -72,12 +72,4 @@ public class MemberDaoImpl implements MemberDao {
         em.persist(member);
         return;
     }
-
-	@Override
-	public Member validateUser(Login login) {
-		  String sql = "select * from users where username='" + login.getUsername() + "' and password='" + login.getPassword()
-		    + "'";
-		    List<Member> users = jdbcTemplate.query(sql, new UserMapper());
-		    return users.size() > 0 ? users.get(0) : null;
-	}
 }
