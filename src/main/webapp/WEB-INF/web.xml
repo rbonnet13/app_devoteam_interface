@@ -21,7 +21,7 @@
     <display-name>Java EE 6 Starter Application</display-name>
     
 	<welcome-file-list>
-		<welcome-file>/views/welcome.jsp</welcome-file>
+		<welcome-file>welcome.jsp</welcome-file>
 	</welcome-file-list>
     <context-param>
         <param-name>contextConfigLocation</param-name>
