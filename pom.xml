@@ -144,10 +144,13 @@
                 <artifactId>commons-logging</artifactId>
                 <version>${version.commons.logging}</version>
             </dependency>
+            
             <dependency>
           	  <groupId>mysql</groupId>
           	  <artifactId>mysql-connector-java</artifactId>
-       		 </dependency>
+          	  <version>${mysql.connector.version}</version>
+       		</dependency>
+       		
             <!-- Add cglib for the MemberDaoTest -->
             <dependency>
                 <groupId>cglib</groupId>

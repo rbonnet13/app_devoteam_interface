@@ -7,6 +7,8 @@ import org.jboss.tools.example.springmvc.model.Login;
 import org.jboss.tools.example.springmvc.model.User;
 import org.jboss.tools.example.springmvc.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;

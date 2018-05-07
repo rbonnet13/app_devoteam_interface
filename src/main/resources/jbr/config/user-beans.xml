@@ -8,8 +8,7 @@
    http://www.springframework.org/schema/context 
    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
-	<context:component-scan base-package="org.jboss.tools.example.springmvc.controller" />
-	<context:component-scan base-package="org.jboss.tools.example.springmvc.service" />
+	<context:component-scan base-package="org.jboss.tools.example.springmvc" />
 	
 	<context:annotation-config />
 
