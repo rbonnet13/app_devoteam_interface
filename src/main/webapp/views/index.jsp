@@ -25,13 +25,33 @@
     <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/platform.js" async defer></script>    
     <link rel="stylesheet" type="text/css" href="<c:url value="/static/resources/css/screen.css"/>"/>
+    <link rel="stylesheet" type="text/css" href="<c:url value="/static/resources/css/style.css"/>"/>
+    
 </head>
 
 <body>
  <div id="container">
-    <div class="img-devo">
-        <img src="<c:url value="/static/resources/gfx/devoteam.jpg"/>" height="250" width="550"/>
-    </div>
+ <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+	  <a href="index.jsp">Accueil</a>
+	  <a href="#applications">Applications</a>
+	  <a href="#contact">Contact</a>
+	  <a href="https://www.devoteam.com">DEVOTEAM.COM</a>
+</div>
+</div>
+<div class="img-devo">
+        <img src="<c:url value="/static/resources/gfx/devoteam.jpg"/>" style="height:70px; width:180px; float:right;" />
+</div>
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
     <div id="content">
         <h1>Welcome to DevoApp!</h1>
         <div>

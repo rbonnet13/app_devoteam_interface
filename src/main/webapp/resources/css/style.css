@@ -53,42 +53,6 @@ body, p, legend, label, input {
   }
 }
 
-fieldset {
-    padding: 10px;
-    border: 1px #0568CD solid;
-}
-
-legend {
-    font-weight: bold;
-    color: #0568CD;
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ff5050;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover:not(.active) {
-    background-color: #66ccff;
-}
-
-.active {
-    background-color: #66ccff;
-}
 
 /* Forms --------------------------------------------------------------------------------------- */
 
@@ -134,7 +98,7 @@ form .requis {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 40px;
     word-break: break-all;
 }
 
@@ -151,7 +115,8 @@ h1 {
 /* Create four equal columns that floats next to each other */
 .column {
     float: left;
-    width: 25%;
+    width: 20%;
+    length: 25%;
 }
 
 /* Clear floats after rows */ 
