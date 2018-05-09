@@ -16,39 +16,51 @@
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-
 <html>
 
 <head>
     <title>DevoApp</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>    
     <link rel="stylesheet" type="text/css" href="<c:url value="/static/resources/css/screen.css"/>"/>
 </head>
 
 <body>
  <div id="container">
-    <div class="dualbrand">
-        <img src="<c:url value="/static/resources/gfx/devoteam.jpg"/>" height="130" width="300"/>
+    <div class="img-devo">
+        <img src="<c:url value="/static/resources/gfx/devoteam.jpg"/>" height="250" width="550"/>
     </div>
-    
     <div id="content">
         <h1>Welcome to DevoApp!</h1>
-
         <div>
             <p>Bienvenu sur notre service d'application.</p>
         </div>
-        
         <div>
           <table>
             <tr>
-                <td><a href="login">Login</a>
-                </td>
-                <td><a href="register">Register</a>
-                </td>
+                 <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+				    <script type="text/javascript">
+				      function onSignIn(googleUser) {
+				        // Useful data for your client-side scripts:
+				        var profile = googleUser.getBasicProfile();
+				        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+				        console.log('Full Name: ' + profile.getName());
+				        console.log('Given Name: ' + profile.getGivenName());
+				        console.log('Family Name: ' + profile.getFamilyName());
+				        console.log("Image URL: " + profile.getImageUrl());
+				        console.log("Email: " + profile.getEmail());
+				
+				        // The ID token you need to pass to your backend:
+				        var id_token = googleUser.getAuthResponse().id_token;
+				        console.log("ID Token: " + id_token);
+				      };
+				    </script>
             </tr>
         </table>
         </div>
-        
+       </div>
 		<div id="aside">
 	        <p>Rester en contact avec nos équipes.</p>
 	        <ul>
@@ -57,14 +69,11 @@
 	             <li><a href="../views/application.html">Application</a></li>
 	        </ul>
       </div>
-      
       <div id="footer">
         <p>
             Ce projet à été developpé par devoteam.<br/>
         </p>
      </div>
-    
-   </div>
 </div>
 </body>
 </html>

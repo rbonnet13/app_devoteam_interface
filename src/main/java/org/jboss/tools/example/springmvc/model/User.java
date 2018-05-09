@@ -1,5 +1,13 @@
 package org.jboss.tools.example.springmvc.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "user")
 public class User {
 	  private String username;
 	  private String password;
@@ -7,7 +15,8 @@ public class User {
 	  private String lastname;
 	  private String email;
 
-	  
+	  @Id
+	  @GeneratedValue(strategy = GenerationType.AUTO)
 	  public String getUsername() {
 	  return username;
 	  }

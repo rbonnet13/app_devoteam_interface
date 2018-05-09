@@ -7,7 +7,7 @@
             <title>Login</title>
         </head>
         <body>
-            <form:form id="loginForm" modelAttribute="login" action="loginProcess" method="post">
+            <form:form id="loginForm" method="post" action="login" modelAttribute="loginBean">
                 <table align="center">
                     <tr>
                         <td>

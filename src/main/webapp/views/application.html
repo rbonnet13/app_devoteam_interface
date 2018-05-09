@@ -6,30 +6,50 @@
         <link type="text/css" rel="stylesheet" href="../resources/css/style.css" />
 </head>
 <body>
-<div>
-	<ul>
-	  <li><a class="active" href="../resources/views/index.jsp">Accueil</a></li>
-	  <li><a href="#applications">Applications</a></li>
-	  <li><a href="#contact">Contact</a></li>
-	  <li><a href="#about">DEVOTEAM</a></li>
-	</ul>
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+	  <a href="index.jsp">Accueil</a>
+	  <a href="#applications">Applications</a>
+	  <a href="#contact">Contact</a>
+	  <a href="https://www.devoteam.com">DEVOTEAM.COM</a>
 </div>
-<div class="flex-container">
-  <div>
-  	<a href="https://devoteam.com">
-  		<img src="../resources/gfx/devo.png" alt="HTML tutorial" style="width:200px;height:200px;border:0">
-	</a>
-  </div>
-  <div>
-  	<a href="https://hive.devoteam.com/intranet/">
-  		<img src="../resources/gfx/hive.png" alt="HTML tutorial" style="width:300px;height:200px;border:0">
+</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu DevoApp</span>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+<div class="body-app">
+  <div class="row">
+  <div class="column">
+    <div class="content">
+  	<a href="https://www.devoteam.com">
+  		<img src="../resources/gfx/devo.png" alt="HTML tutorial" style="width:100%">
 	</a>
 	</div>
-  	<div>
-  		<a href="http://appdevoteam-appdevoteam.192.168.99.100.nip.io">
-  		<img src="../resources/gfx/mydevo.png" alt="HTML tutorial" style="width:200px;height:200px;border:0">
-		</a>
-	</div>  
+  </div>
+  <div class="column">
+    <div class="content">
+  	<a href="https://hive.devoteam.com/intranet/">
+  		<img src="../resources/gfx/hive.png" alt="HTML tutorial" style="width:100%">
+	</a>
+	</div>
+  </div>
+  <div class="column">
+    <div class="content">
+  	<a href="http://appdevoteam-appdevoteam.192.168.99.100.nip.io">
+  		<img src="../resources/gfx/mydevo.png" alt="HTML tutorial" style="width:100%">
+	</a>
+	</div>
+  </div>
+</div>  
 </div>
 </body>
 </html>

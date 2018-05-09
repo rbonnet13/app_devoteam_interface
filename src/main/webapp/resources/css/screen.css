@@ -24,6 +24,10 @@ body {
     color: #363636;
 }
 
+.img-devo{
+	padding-left:150px;
+}
+
 #container {
     margin: 0 auto;
     padding: 0 20px 10px 20px;
@@ -32,6 +36,7 @@ body {
     border-right: 5px solid #8c8f91;
     border-bottom: 25px solid #8c8f91;
     width: 865px; /* subtract 40px from banner width for padding */
+    height:500px;
     background: #FFFFFF;
     background-image: url(../gfx/headerbkg.png);
     background-repeat: repeat-x;
