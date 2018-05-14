@@ -83,8 +83,8 @@
         	<img src="<c:url value="/static/resources/gfx/devoteam.jpg"/>"/>
 	        <p>Rester en contact avec nos équipes.</p>
 	        <ul>
-	            <li><a href="https://script.google.com/a/macros/devoteam.com/s/AKfycbx-QrWfN1tycniy-GYbWA3_yGW44YZ_yuIu5Iql7ARrzDCRjb8/exec">IT portal</a></li>
-	            <li><a href="https://france.devoteam.com/">Site devoteam</a></li>
+	            <li><a href="https://script.google.com/a/macros/devoteam.com/s/AKfycbx-QrWfN1tycniy-GYbWA3_yGW44YZ_yuIu5Iql7ARrzDCRjb8/exec" target=_blank>IT portal</a></li>
+	            <li><a href="https://france.devoteam.com/" target=_blank>Site devoteam</a></li>
 	        </ul>
       </div>
       <div id="footer">
