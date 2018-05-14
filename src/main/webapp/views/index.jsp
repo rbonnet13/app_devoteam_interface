@@ -28,31 +28,29 @@
     <link rel="stylesheet" type="text/css" href="<c:url value="/static/resources/css/style.css"/>"/>
     
 </head>
-
-<body>
+<body class="body-app">
  <div id="container">
- <div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-	  <a href="index.jsp">Accueil</a>
-	  <a href="#applications">Applications</a>
-	  <a href="#contact">Contact</a>
-	  <a href="https://www.devoteam.com">DEVOTEAM.COM</a>
-</div>
-</div>
-<div class="img-devo">
-        <img src="<c:url value="/static/resources/gfx/devoteam.jpg"/>" style="height:70px; width:180px; float:right;" />
-</div>
-<script>
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-}
-
-function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
-}
-</script>
-    <div id="content">
+	<div id="content">
+	<div id="myNav" class="overlay">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <div class="overlay-content">
+			  <a href = <c:url value = "/views/index.jsp"/>>Accueil</a>
+			  <a href="../views/application.html">Applications</a>
+			  <a href="#contact">Contact</a>
+			  <a href="https://www.devoteam.com">Devoteam.com</a>
+		</div>
+		</div>
+		<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu DevoApp</span>
+		
+		<script>
+		function openNav() {
+		    document.getElementById("myNav").style.width = "100%";
+		}
+		
+		function closeNav() {
+		    document.getElementById("myNav").style.width = "0%";
+		}
+		</script>
         <h1>Welcome to DevoApp!</h1>
         <div>
             <p>Bienvenu sur notre service d'application.</p>
@@ -78,14 +76,15 @@ function closeNav() {
 				      };
 				    </script>
             </tr>
-        </table>
+         </table>
         </div>
-       </div>
+     </div>
 		<div id="aside">
+        	<img src="<c:url value="/static/resources/gfx/devoteam.jpg"/>"/>
 	        <p>Rester en contact avec nos équipes.</p>
 	        <ul>
-	            <li><a href="https://script.google.com/a/macros/devoteam.com/s/AKfycbx-QrWfN1tycniy-GYbWA3_yGW44YZ_yuIu5Iql7ARrzDCRjb8/exec">IT PORTAL</a></li>
-	            <li><a href="https://france.devoteam.com/">DEVOTEAM</a></li>
+	            <li><a href="https://script.google.com/a/macros/devoteam.com/s/AKfycbx-QrWfN1tycniy-GYbWA3_yGW44YZ_yuIu5Iql7ARrzDCRjb8/exec">IT portal</a></li>
+	            <li><a href="https://france.devoteam.com/">Site devoteam</a></li>
 	             <li><a href="../views/application.html">Application</a></li>
 	        </ul>
       </div>
