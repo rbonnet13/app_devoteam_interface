@@ -85,7 +85,6 @@
 	        <ul>
 	            <li><a href="https://script.google.com/a/macros/devoteam.com/s/AKfycbx-QrWfN1tycniy-GYbWA3_yGW44YZ_yuIu5Iql7ARrzDCRjb8/exec">IT portal</a></li>
 	            <li><a href="https://france.devoteam.com/">Site devoteam</a></li>
-	             <li><a href="../views/application.html">Application</a></li>
 	        </ul>
       </div>
       <div id="footer">

@@ -39,10 +39,6 @@
             <tr>
                 <td>Bienvenu sur l'App devoteam</td>
             </tr>
-            <tr>
-                <td><a href = <c:url value = "/views/index.jsp"/>>Home</a>
-                </td>
-            </tr>
         </table>
      </div>
     </body>
